@@ -1,0 +1,18 @@
+/Users/ul-tech4/.rvm/rubies/ruby-2.1.2/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling bson_native.c
+In file included from bson_native.c:21:
+./native-endian.h:196:15: warning: unused function '__bson_double_swap_slow' [-Wunused-function]
+static double __bson_double_swap_slow(double v)
+              ^
+1 warning generated.
+linking shared-object bson_native.bundle
+ld: warning: directory not found for option '-L/Users/travis/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 bson_native.bundle ./.gem.20170315-6517-1b8xrjd
+installing default bson_native libraries
